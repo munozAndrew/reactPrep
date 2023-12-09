@@ -19,10 +19,17 @@
 
       
       function HomePage(){
-        return <div>
-          <Header title="sus" />
-          <Header />
-        </div>
+        const names = ['Nam1', 'Nam2', 'Nam3']
+
+        return(
+          <div>
+            <Header title="Develop. Preview. Ship. 🚀"/>
+            <ul>
+              {names.map((name) => (<li key={name}>{name}</li>))}
+            </ul>
+          </div>
+
+        ); 
       }
       
       ReactDOM.render(<HomePage />, app);
