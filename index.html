@@ -21,12 +21,16 @@
       function HomePage(){
         const names = ['Nam1', 'Nam2', 'Nam3']
 
+        function handleClick(){
+          console.log("Increment like count")
+        }
         return(
           <div>
             <Header title="Develop. Preview. Ship. 🚀"/>
             <ul>
               {names.map((name) => (<li key={name}>{name}</li>))}
             </ul>
+            <button onClick={handleClick}>Like</button>
           </div>
 
         ); 
